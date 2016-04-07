@@ -1,0 +1,16 @@
+<div class="block-quastion">
+  <h1><%= quastion %></h1>
+</div>
+<div style="padding-left: 25%">
+	<img src= <%= pic %> alt='avatar' width="350px" height="280px" > 
+</div>
+<br>
+<div id="options" class="block-options">
+  <ul>
+    <% _.each(options, function(option, iterator){%> 
+    <li id=<%= iterator %>> <span class="glyphicon glyphicon-unchecked"></span> <%= option %></li> <%})%>
+  </ul>
+</div>
+<div class="next-button">
+  <a href="#"><span>next</span></a>
+</div>
