@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Document One</title>
+  <!-- Google font - Open Sans -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/simple-quiz-styles.css">
+</head>
+
+<body>
+
+  <div class="page-wrap">
+
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png"></a>
+      </div>
+    </header>
+
+    <div class="container">
+      <div id="simple-quiz" class="body-quiz">
+      </div> <!-- body-quiz -->
+    </div> <!-- container -->
+
+
+  </div> <!-- page-wrap-->
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">&copy; Front End Lab 4</p>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    var quizData = "api/cats.json"
+  </script>
+  <!-- Jquery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/libs/underscore.js"></script>
+  <script src="js/libs/underscore.js"></script>
+  <!--<script src="js/script.js"></script>-->
+  <script>
+  	
+
+  	$.when(
+  $.getJSON(quizData), // get json with quastions
+  $.get("templ/cat-test-questions.html"), // get template with quastions page
+  $.ajax("templ/simple-test-final.html") // get template with final page
+  )
+  .then(renderPage)
+  .fail(function(){console.log("Error");
+});
+
+
+function renderPage(DataRequest, qTmplRequest, finTmplRequest) {
+
+  var quastions = DataRequest[0]; // data from parsed JSON
+  var qTmpl = qTmplRequest[0];  // template with quastions page
+  var finTmpl = finTmplRequest[0];  // template with final page
+
+  var simpleQuiz = $('#simple-quiz'); // container for rendered info
+  var quastionCounter = 0; // number of current quastion
+  var correctAnswers = 0; //counter of the correct answers
+
+  var quastionPageTmpl = _.template(qTmpl);  // underscore template for quastion page
+  var finalnPageTmpl = _.template(finTmpl);  // underscore template for final page
+
+  // render function for quastion page
+  function renderQuastionPage(template, arr, index) {
+    var info = template({
+                        quastion: arr[index].quastion,
+                        pic: arr[index].pic,
+                        options: arr[index].option
+                       });
+    $('#simple-quiz').html(info);
+  }
+
+  // render function for final page
+  function renderFinalPage(template, arr) {
+    var info = template({ 
+                        result: correctAnswers,
+                        totalQuastion: arr.length
+                       });
+    $('#simple-quiz').html(info);
+  }
+
+  // event function when click option
+  function optionChooseEvent() {
+
+    var optionId = ( ($(this).attr('id')) ); // ID that is clicked on
+
+    if (optionId == quastions[quastionCounter].correct) {
+      $(this).addClass('option-correct'); //make it green
+      $(this).children().removeClass('glyphicon-unchecked').addClass('glyphicon-ok'); //change icon;
+      $(this).siblings().addClass('option-not-active'); //make other options not active
+      correctAnswers++;
+      console.log(correctAnswers);
+    } else {
+      $(this).addClass('option-wrong');
+      $(this).siblings().addClass('option-not-active'); //make other options not active
+      $(this).children().removeClass('glyphicon-unchecked').addClass('glyphicon-remove');
+      $("#" + quastions[quastionCounter].correct).removeClass('option-not-active').addClass('option-correct'); //make it green
+      $("#" + quastions[quastionCounter].correct).children().removeClass('glyphicon-unchecked').addClass('glyphicon-ok');
+    }
+
+    $( "#simple-quiz").undelegate( '#options li', 'click', optionChooseEvent); //undelegate event
+  }
+
+  // event function when click next button
+  function nextPageEvent() {
+    quastionCounter++;
+    if (quastionCounter < quastions.length) {
+      // delegate click event each time new page is loaded
+      $( "#simple-quiz").delegate( '#options li', 'click', optionChooseEvent);
+      //simpleQuiz.html(''); // if add this one we receive empty table at the end 
+      renderQuastionPage(quastionPageTmpl, quastions, quastionCounter);
+    } else {
+      renderFinalPage(finalnPageTmpl, quastions);
+    }
+  }
+
+  // choose option event
+  $( "#simple-quiz").delegate( '#options li', 'click', optionChooseEvent);
+  // next button event
+  $( "#simple-quiz").delegate( ".next-button", 'click', nextPageEvent);
+
+  renderQuastionPage(quastionPageTmpl, quastions, quastionCounter);
+}
+  </script>
+
+
+</body>
+</html>
