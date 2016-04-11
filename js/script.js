@@ -56,11 +56,11 @@ var mainPage = [
       type: 'glyphicon glyphicon-time'
     },
     {
-      h1: 'Тварини: коти',
-      rubric: 'біологія',
+      h1: 'Правила дорожнього руху',
+      rubric: 'Громадськість',
       quastions: '6 запитань',
-      image: 'img/cats/vHldBQ64fpM.jpg',
-      url: 'cats-animal.html',
+      image: 'img/auto/foto-ustupi-dorogu.jpg',
+      url: 'auto.html',
       type: 'glyphicon glyphicon-check'
     },
     {
