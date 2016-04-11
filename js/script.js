@@ -55,6 +55,22 @@ var mainPage = [
       url: 'time-test_test.html',
       type: 'glyphicon glyphicon-time'
     },
+    {
+      h1: 'Тварини: коти',
+      rubric: 'біологія',
+      quastions: '6 запитань',
+      image: 'img/cats/vHldBQ64fpM.jpg',
+      url: 'cats-animal.html',
+      type: 'glyphicon glyphicon-check'
+    },
+    {
+      h1: 'Планети',
+      rubric: 'Астрономiя',
+      quastions: '6 запитань',
+      image: 'img/item_astronomy.jpg',
+      url: 'astronomy.html',
+      type: 'glyphicon glyphicon-check'
+    },
     'temp4'
   ];
 
