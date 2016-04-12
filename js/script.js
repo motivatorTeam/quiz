@@ -41,7 +41,7 @@ var mainPage = [
     },
     {
       h1: 'Вгадай селебріті на фото',
-      rubric: 'медіа',
+      rubric: 'Медіа',
       quastions: '10 запитань',
       image: 'img/guessPicture.jpg',
       url: 'guessPicture.html',
@@ -70,6 +70,14 @@ var mainPage = [
       image: 'img/item_astronomy.jpg',
       url: 'astronomy.html',
       type: 'glyphicon glyphicon-check'
+    },
+    {
+      h1: 'Перевір свою спритність та кмітливсть',
+      rubric: 'Гра',
+      quastions: '1 завдання',
+      image: 'img/runner.jpg',
+      url: 'trickster.html',
+      type: 'glyphicon glyphicon-hand-up'
     },
     'temp4'
   ];
