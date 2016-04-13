@@ -87,14 +87,6 @@ var mainPage = [
       url: 'trickster.html',
       type: 'glyphicon glyphicon-hand-up'
     },
-    {
-      h1: 'Іноземна мова: Англійська',
-      rubric: 'кросворди',
-      quastions: '2 завдання',
-      image: 'img/English1.jpg',
-      url: 'crossword.html',
-      type: 'glyphicon glyphicon-hand-up'
-    },
     'temp4'
   ];
 
