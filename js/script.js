@@ -24,6 +24,14 @@ var mainPage = [
       type: 'glyphicon glyphicon-screenshot'
     },
     {
+      h1: 'Іноземна мова: Англійська',
+      rubric: 'кросворди',
+      quastions: '2 завдання',
+      image: 'img/English1.jpg',
+      url: 'crossword.html',
+      type: 'glyphicon glyphicon-hand-up'
+    },
+    {
       h1: 'Світ, у якому ми живемо',
       rubric: 'географія',
       quastions: '5 запитань',
