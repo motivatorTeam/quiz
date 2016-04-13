@@ -1,0 +1,63 @@
+[{
+    "answers_vertical": ["0. TROUSERS", "1. SOCKS"],
+    "answers_horizontal": ["0. TSHIRT", "1. PULLOVER", "2. TRAINERS", "3. SHOES"],
+    "questions_vertical": ["0. An outer garment for covering the body from the waist to the ankles, divided into sections to fit each leg separately.", "1. An item of clothing worn on the feet."],
+    "questions_horizontal": ["0. The T shape made with the body and sleeves. ", "1. Sweater or hoodie, a piece of clothing pulled over the head instead of buttoned or zipped-up.", "2. Sneakers. ", "3. A durable covering for the human foot, made of leather or similar material with a rigid sole and heel, usually extending no higher than the ankle."],
+    "topic": "Topic #1: Clothes",
+    "arrayCellsAbbled": [37, 38, 39, 40, 41, 42, 52, 67, 82, 97, 112, 127, 142, 81, 82, 83, 84, 85, 86, 87, 88, 107, 108, 109, 110, 111, 112, 113, 114, 142, 143, 144, 145, 146, 161, 176, 191, 206],
+    "arrayNumbers": [22, 36, 80, 106, 141, 131],
+    "arrayNumberHorizontal": [36, 80, 106, 141],
+    "arrayNumberVertical": [22, 131],
+    "horizontal_words": [
+        ["T", "S", "H", "I", "R", "T"],
+        ["P", "U", "L", "L", "O", "V", "E", "R"],
+        ["T", "R", "A", "I", "N", "E", "R", "S"],
+        ["S", "H", "O", "E", "S"]
+    ],
+    "vertical_words": [
+        ["T", "R", "O", "U", "S", "E", "R", "S"],
+        ["S", "O", "C", "K", "S"]
+    ],
+    "x_dir": [
+        [37, 38, 39, 40, 41, 42],
+        [81, 82, 83, 84, 85, 86, 87, 88],
+        [107, 108, 109, 110, 111, 112, 113, 114],
+        [142, 143, 144, 145, 146]
+    ],
+    "y_dir": [
+        [37, 52, 67, 82, 97, 112, 127, 142],
+        [146, 161, 176, 191, 206]
+    ]
+}, {
+    "answers_vertical": ["0. MOUSE", "1. CHEETAH", "2. CATERPILLAR"],
+    "answers_horizontal": ["0. CAT", "1. ANT", "2. HUMSTER", "3. LION"],
+    "questions_vertical": ["0. Any similar small animal of various rodent and marsupial families. ", "1.  A cat, Acinonyx jubatus, of southwestern Asia and Africa, resembling a leopard but having certain doglike characteristics.", "2. The wormlike larva of a butterfly or a moth. "],
+    "questions_horizontal": ["0. A small domesticated carnivore, Felis domestica or F. catus, bred in a number of varieties. ", "1.  Social insects of the family Formicidae, of worldwide distribution especially in warm climates", "2. Any of several short-tailed, stout-bodied, burrowing rodents, as Cricetus cricetus, of Europe and Asia, having large cheek pouches.", " 3. A large, usually tawny-yellow cat, Panthera leo, native to Africa and southern Asia, having a tufted tail and, in the male, a large mane."],
+    "topic": "Topic #2: Animals",
+    "arrayCellsAbbled": [35, 36, 37, 50, 65, 80, 95, 110, 125, 66, 67, 68, 69, 70, 71, 72, 93, 94, 108, 109, 110, 111, 112, 113, 114, 115, 55, 70, 85, 100, 130, 145, 160, 175, 190, 205, 144, 145, 146, 147, 78, 93, 108, 123, 138],
+    "arrayNumbers": [34, 92, 107, 143, 63, 20, 40],
+    "arrayNumberHorizontal": [34, 92, 107, 143],
+    "arrayNumberVertical": [63, 20, 40],
+    "horizontal_words": [
+        ["C", "A", "T"],
+        ["A", "N", "T"],
+        ["H", "A", "M", "S", "T", "E", "R"],
+        ["L", "I", "O", "N"]
+    ],
+    "vertical_words": [
+        ["M", "O", "U", "S", "E"],
+        ["C", "H", "E", "E", "T", "A", "H"],
+        ["C", "A", "T", "E", "R", "P", "I", "L", "L", "A", "R"]
+    ],
+    "x_dir": [
+        [35, 36, 37],
+        [93, 94, 95],
+        [109, 110, 111, 112, 113, 114],
+        [144, 145, 146, 147]
+    ],
+    "y_dir": [
+        [78, 93, 108, 123, 138, 153],
+        [35, 50, 65, 80, 95, 110, 125],
+        [55, 70, 85, 100, 115, 130, 145, 160, 175, 190, 205]
+    ]
+}]
