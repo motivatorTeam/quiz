@@ -1,4 +1,4 @@
-(function(){
+//(function(){
 	var startTime, seconds, timerInterval, scores, song='', clicker = 0, switcher = true;
 
 	function getData (url){
@@ -129,6 +129,7 @@
 
 	function checkAnswer(correct, index){
 		var variant = ($('.variants-input').val()).toLowerCase();
+		var indexedScore = scores * index;
 
 		if(variant != correct){
 			$('.result').attr('id', '');
@@ -136,8 +137,8 @@
 			$('.incorrect-see-correct').text(correct);
 			return;
 		}
-		if(variant == correct && scores > localStorage.guessMelodyRecord){
-			var indexedScore = scores * index;
+		if(variant == correct && indexedScore > localStorage.guessMelodyRecord){
+			
 			localStorage.guessMelodyRecord = indexedScore;
 			$('.best').text(localStorage.guessMelodyRecord);
 			$('.result').attr('id', '');
@@ -173,4 +174,4 @@
 	startInfo();
 	play();
 	stop();
-})();
+//})();
