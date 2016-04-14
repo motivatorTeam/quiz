@@ -1,0 +1,25 @@
+[
+	{
+		"name":"halo",
+		"src":"./tracks/halo.ogg",
+		"i":"3"
+	},
+
+	{
+		"name":"hello",
+		"src":"./tracks/hello.ogg",
+		"i":"2"
+	},
+
+	{
+		"name":"radio ga ga",
+		"src":"./tracks/radio-gaga.ogg",
+		"i":"6"
+	},
+
+	{
+		"name":"we will rock you",
+		"src":"./tracks/we-will-rock-you.ogg",
+		"i":"2"
+	}
+]

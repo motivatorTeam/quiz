@@ -87,6 +87,14 @@ var mainPage = [
       url: 'trickster.html',
       type: 'glyphicon glyphicon-hand-up'
     },
+    {
+      h1: 'Вгадай мелодію',
+      rubric: 'Музика',
+      quastions: '4 пісні',
+      image: 'img/music.jpg',
+      url: 'guess_melody.html',
+      type: 'glyphicon glyphicon-play'
+    },
     'temp4'
   ];
 

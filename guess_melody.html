@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>quiz</title>
+	<link rel="icon" href="./img/icon.png">
+	 <!-- Google font - Open Sans -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/guess_melody.css">
+</head>
+<body>
+	<div class="page-wrap">
+<!-- HEADER************************************-->
+	    <header>
+	      <div class="logo">
+	        <a href="index.html">
+	        	<img src="./img/logo.png"></a>
+	      </div>
+	    </header>
+
+<!-- MAIN ************************************ -->	
+
+		<div class="question container">
+			
+			<div class="main-wrapper container">
+
+				<h1 class='h1-question'>Вгадайте композицію</h1>
+
+				<div class="score-wrapper">
+					<span class="scores index">індекс складності: <span class="difficulty">1</span></span>
+					<span class="scores best-score">рекорд: <span class="best">0</span></span>
+					<span class="scores score-wrapper">очки: <span class="score">10000</span></span>
+				</div>
+				
+				<div class="counter-wrapper"><span class="counter">0.000</span></div>
+				
+				<div class="img-wrapper">
+					<img class='equalizer-img' src="img/guess_melody/equalizer.png" alt="equalizer"/>
+					<img class='equalizer-gif-img' id='hidden' src="img/guess_melody/equalizer.gif" alt="equalizer"/>
+				</div>
+							
+				<div class="controls-wrapper">
+					<span class='play controls'><span class='play-icon glyphicon glyphicon-play'></span></span>
+					<span class='stop controls'><span class='stop-icon glyphicon glyphicon-stop'></span></span>	
+				</div>
+
+				<div class="variants-input-wrapper">
+					<input class='variants-input' type="text"/>
+					<span id='check'>Перевірити</span>
+				</div>
+
+				<div class="info" id='hidden'>
+					<ul>
+						<li>Що швидше відгадаєте пісню - то більше очок отримаєте.</li>
+						<li>Назва пісні вводиться мовою виконання цієї пісні (напр. adventure of a lifetime) великими чи маленьки літерами.</li>
+						<li>Кнопка "Грати" починає відлік часу та програвання пісні.</li>
+						<li>Індекс складності вказує у скільки разів може збільшитись сума очок (від 1 до 10). Залежить від рівня загальновідомості пісні.</li>
+						<li>Щоб перейти до прослуховування наступної пісні - просто знову натисніть "Грати".</li>
+					</ul>
+					<div class="info-button-wrapper">
+						<span class='info-button'>Гаразд</span>
+					</div>
+				</div>
+
+				<div class="result" id='hidden'>
+					<p class='correct' id='hidden'>Ви вгадали! <br/>Ваш виграш становить <span class="points"></span> очок!</p>
+					<p class='correct-record' id='hidden'>Новий рекорд! <br/>Ваш виграш становить <span class="points"></span> очок!</p>
+					<p class='incorrect' id='hidden'>Ви не вгадали! <br/>Правильна назва пісні <span class="incorrect-see-correct"></span></p>
+					
+					<span class='result-button'>Гаразд</span>
+				</div>
+
+				<div class="finish" id='hidden'>
+					<p>Вітаємо!!! <br/>Ви прослухали всі композиції.</p>
+					<p>Продовжіть тестування, клацнувши по лого вгорі.</p>					
+				</div>
+			
+			</div>
+			
+		</div> <!-- end of div.question -->
+
+	</div><!-- end of .page-wrap -->
+
+<!-- FOOTER************************************-->
+	<footer class="footer">
+    <div class="container">
+      <p class="text-muted">&copy; Front End Lab 4</p>
+    </div>
+  </footer>
+	
+
+<!-- Jquery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+  <script src="js/guess_melody.js"></script>
+
+</body>
+</html>
