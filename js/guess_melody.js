@@ -1,4 +1,4 @@
-//(function(){
+(function(){
 	var startTime, seconds, timerInterval, scores, song='', clicker = 0, switcher = true;
 
 	function getData (url){
@@ -174,4 +174,4 @@
 	startInfo();
 	play();
 	stop();
-//})();
+})();
