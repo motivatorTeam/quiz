@@ -14,8 +14,8 @@
 		timer = new Date();
 	}
 
-	var dx= 3,   dx2= 2,    dx3= 2,   dx4= 3,	
-		dy= 3,   dy2= 2,    dy3= 2,   dy4= 3,
+	var dx= 5,   dx2= 4,    dx3= 4,   dx4= 5,	
+		dy= 5,   dy2= 4,    dy3= 4,   dy4= 5,
 		 y= 20,   y2= 329,   y3= 340,  y4= 50,
 		 x= 30,   x2= 30,    x3= 350,  x4= 340;
 
@@ -115,7 +115,7 @@
 				if(!trickster.working){
 				startInterval = setInterval(function(){
 					draw();
-				}, 8);	
+				}, 15);	
 				trickster.working = true;
 				trickster.tricking = true;
 				}
@@ -190,8 +190,8 @@
 		function resultWindow(){
 			$('.reset').attr('id', '');
 			$('.again').click(function(){
-				dx= 3,   dx2= 2,    dx3= 2,   dx4= 3,	
-				dy= 3,   dy2= 2,    dy3= 2,   dy4= 3,
+				dx= 5,   dx2= 4,    dx3= 4,   dx4= 5,	
+				dy= 5,   dy2= 4,    dy3= 4,   dy4= 5,
 				 y= 20,   y2= 329,   y3= 340,  y4= 50,
 				 x= 30,   x2= 30,    x3= 350,  x4= 340,
 				trickster.x = canvas.width / 2,
