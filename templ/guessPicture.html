@@ -1,13 +1,12 @@
 <h1 class='h1-question'>Хто на картинці?</h1>
 		
-<div class="col-md-6">
+<div class="col-md-12  col-xs-12">
 	<div class="img-wrapper">
 		<img id='picture' src='<%=instance.url%>' alt='Your browser does not suport pictures'/>
 	</div>
-	<div class="score">вірно: <%=key.score%></div>
 </div>
 
-<div class='col-md-6'>
+<div class='col-md-12 col-xs-12'>
 	<div class="variants">
 
 		<% _.each( instance.variants, function(variant) { %>

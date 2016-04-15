@@ -1,7 +1,14 @@
 /* C O M M O N ********************** */
 body {
-  background: #EDECE3;
+  background: #f8f8f5;
   font-family: 'Open Sans', sans-serif;
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
 }
 
 a, a:hover, a:focus {
@@ -23,6 +30,7 @@ a, a:hover, a:focus {
 .img-wrapper{
   perspective: 300px;
   height:283px;  
+  margin:0 auto;
 }
 
 img#picture{
@@ -48,28 +56,30 @@ img#picture{
 .question{
   margin-bottom: 20px;
   border-radius: 5px;
-  background: #F9F4CD;
-  padding-bottom:30px;
+  max-width:600px;
+  min-width:550px;
+  background: #F2F2F2;
+  box-shadow: 0px 0px 15px rgba(0,0,0,.3);
 }
 
 .h1-question{
-  box-shadow: 0px 0px 15px rgba(0,0,0,.3);
   margin: 15px;
   border-radius: 5px;
   background: #a0a384;
 	color: #fff;
-  font-size: 35px;
+  font-size: 25px;
   text-align: center;
-  padding: 10px;
-  font-weight: bold;
+  padding: 20px;
+
 }
 
 .variants{
+  box-shadow: 0px 0px 3px 0px rgba(92,92,92,.5);
 	background: #fff;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,.5);
   padding: 10px;
   text-align: left;
+  margin-top: 20px;
 }
 
 .variants span{
@@ -112,9 +122,8 @@ img#picture{
   background: url('../img/guessPicture/sosedov.png') no-repeat center center;
   background-size:cover;
   padding: 150px 50px;
-  margin: 15px;
+  margin: 20px 15px;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,.5);
 }
 
 .next-container{
@@ -129,14 +138,9 @@ img#picture{
   font-size: 20px;
   border-radius: 5px;
   display: inline-block;
-  margin-top:15px;
-  margin-bottom:10px;
-  box-shadow:  0 3px 10px rgba(255,255,255,.5) inset,0 -1px 3px rgba(0,0,0,.3) inset;
+  margin:20px;
 }
 
-.next:active{
-  box-shadow:  0 -3px 10px rgba(255,255,255,.5) inset,0 1px 3px rgba(0,0,0,.3) inset;
-}
 
 /* sticky F O O T E R ********************* */
 
