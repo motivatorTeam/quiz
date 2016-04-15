@@ -1,6 +1,6 @@
 /* C O M M O N ******************* */
 body {
-  background: #EDECE3;
+  background: #f8f8f5;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -12,53 +12,52 @@ a, a:hover, a:focus {
 
 .logo {
   text-align: center;
-  margin: -7px auto 3px;
+  margin: 0px auto 20px;
 }
 
 .logo img {
-  max-width: 130px;
+  max-width: 250px;
 }
 
 /* M A I N *********************** */
 
-.question{
-  margin-bottom: 20px;
+.main-wrapper{
+  max-width:600px;
+  min-width:550px;
+  background: #FFF;
+  margin:20px auto;
   border-radius: 5px;
-  background: #F9F4CD;
-  padding-top: 20px;
-  padding-bottom:20px;
-  text-align:center;
   box-shadow: 0px 0px 15px rgba(0,0,0,.3);
+  text-align:center;
+  background: #F2F2F2;
+  padding:20px;
+
 }
 
+.question-wrapper{
+  background:#fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px rgba(92,92,92,.5);
+  padding: 20px;
+  min-width:500px;
+}
 .h1-question{
-  box-shadow: 0px 0px 15px rgba(0,0,0,.3);
   border-radius: 5px;
   background: #a0a384;
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
   line-height:30px;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   font-weight: bold;
-  margin:10px;
-}
-
-.main-wrapper{
-  max-width:60%;
-  min-width:450px;
-  background: #FFF;
-  margin:0 auto;
-  border-radius: 5px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,.3);
+  margin:0 auto 20px;
 }
 
 .scores{
   display: inline-block;
-  box-shadow: 0px 0px 10px rgba(0,0,0,.3);
   color: #fff;
   border-radius: 5px;
-  background: #62B565;
+  background: #a0a384;
   padding: 5px;
   margin: 5px;
   font-size: 15px;
@@ -99,30 +98,14 @@ a, a:hover, a:focus {
   color: #555;
   position:relative;
 }
-.controls:hover{
-  text-shadow:0 0 15px rgba(0, 150, 136,.46);
-  box-shadow: 0 0 15px rgba(0, 150, 136, 0.49),0 2px 5px #fff inset, 0 -2px 5px #292929 inset;
-}
-.stop:hover{
-  text-shadow:0 0 15px #E47450;
-  box-shadow: 0 0 15px #E47450,0 2px 5px #fff inset, 0 -2px 5px #292929 inset;
-}
 
 .play:active{
-  text-shadow:0 0 15px rgba(0, 150, 136,.46);
   box-shadow: 0 -2px 5px #fff inset, 0 1px 5px #292929 inset;
-  padding: 11px 10px 9px;
   transition: box-shadow .5s linear;
-  padding: 11px 10px 9px;
-  color:rgba(0, 150, 136,.46);
-  transition: box-shadow .3s linear;
 }
 
 .stop:active{
-  text-shadow:0 0 15px #E47450;
   box-shadow: 0 -2px 5px #fff inset, 0 1px 5px #292929 inset;
-  padding: 11px 10px 9px;
-  color:#E47450;
   transition: box-shadow .3s linear;
 }
 
@@ -134,8 +117,8 @@ a, a:hover, a:focus {
   top: 12px;
 }
 
-#play-active .play-icon, .stop:active .stop-icon{
-  top: 13px;
+.play:active .play-icon, .stop:active .stop-icon{
+  top: 14px;
 }
 
 .stop-icon{
@@ -176,7 +159,7 @@ a, a:hover, a:focus {
   margin: 10px;
   color:#fff;
   font-weight: bold;
-  background:#A0A384;
+  background:#a0a384;
   box-shadow: 0 0 5px #521400, 0 -2px 5px rgba(0,0,0,.5) inset, 0 2px 5px rgba(255,255,255,.5) inset;
 }
 #check:hover{
@@ -191,15 +174,15 @@ a, a:hover, a:focus {
     position: absolute;
     max-width: 600px;
     min-width: 400px;
-    background: rgba(98, 181, 101, 0.92);
+    background: #a0a384;
     color: #FFFFFF;
     font-size: 22px;
     padding: 20px 15px;
     text-align: left;
-    top: calc(50% - 200px);
+    top: calc(66% - 200px);
     left:calc(50% - 300px);
     border-radius: 5px;
-    box-shadow: 0 0 5px #521400;
+
 }
 
 .info ul{
@@ -224,12 +207,12 @@ a, a:hover, a:focus {
 .result{
   position: absolute;
     width: 500px;
-    background: rgba(98, 181, 101, 0.92);
+    background: #a0a384;
     color: #FFFFFF;
     font-size: 39px;
     padding: 20px 15px;
     text-align: center;
-    top: calc(69% - 200px);
+    top: calc(86% - 200px);
     left: calc(50% - 250px);
     border-radius: 5px;
 }
@@ -249,7 +232,7 @@ a, a:hover, a:focus {
 .finish{
   position: absolute;
   width: 700px;
-  background: rgba(98, 181, 101, 0.92);
+  background: #a0a384;
   color: #FFFFFF;
   font-size: 49px;
   padding: 64px 15px;
@@ -257,7 +240,6 @@ a, a:hover, a:focus {
   top: calc(56% - 200px);
   left: calc(50% - 350px);
   border-radius: 5px;
-  box-shadow: 0 0 5px #521400;
 }
 
 
